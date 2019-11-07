@@ -13,19 +13,19 @@
 
 void showOptions()
 {
-    std::cout << "1. Abrir otra alerta" << endl;
-    std::cout << "2. Abrir pagina web(SOLO CHROME)" << endl;
-    std::cout << "3. Reiniciar PC" << endl;
-    std::cout << "4. Terminar virus" << endl;
+    std::cout << "1. Open other alert" << endl;
+    std::cout << "2. Open WebSite(ONLY CHROME!)" << endl;
+    std::cout << "3. Reboot PC" << endl;
+    std::cout << "4. End Virus" << endl;
 }
 
-void showSpanish()
+void showEnglish()
 {
     std::ofstream virus;
     char nombreVirus[500];
     try
     {
-        std::cout << "Ahora dime el nombre de tu virus: ";
+        std::cout << "Now say me your virus name: ";
         std::cin >> nombreVirus;
         virus << nombreVirus;
     }
@@ -36,20 +36,20 @@ void showSpanish()
     }
     
 
-    // ESTA PARTE CREA EL ARCHIVO DEL VIRUS FINAL
+    //This part create the virus file
     try
     {
         virus.open("virus.vbs", std::ios::ate);
-        virus << "msgbox(\"" << "Has sido infectado por el virus" << " " << nombreVirus << "\")";
+        virus << "msgbox(\"" << "You are infected by the virus:" << " " << nombreVirus << "\")";
     }
     catch(const std::exception& e)
     {
         std::cout << "ERROR Creating the virus.vbs file!. 0x2" << endl;
     }
 
-    std::cout << "Ahora selecciona las acciones que quieres que tu virus haga" << endl;
+    std::cout << "Now select what the virus make now" << endl;
 
-    //Este es el "main loop" en el cual se escribiran los eventos
+    //This is the "main loop" what write the events
     for(int i = 0; i < 1000; i++)
     {
         int option;
@@ -57,7 +57,7 @@ void showSpanish()
         scanf("%i", &option);
         if(option == 1)
         {
-            std::cout << "Por favor dime que otro mensaje quieres que despliege el programa: ";
+            std::cout << "Please tell me what other message do you want the program to display: ";
             char mensaje[500];
             std::cin >> mensaje;
             virus << endl << "msgbox(\"" << mensaje << "\")";
@@ -102,8 +102,8 @@ void showSpanish()
         else if(option == 4)
         {
             break;
+            std::cout << "BYE!";
             system("PAUSE");
-            std::cout << "Adios!";
         }
         i++;
     }

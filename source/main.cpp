@@ -12,6 +12,7 @@
 
 // THE LANGUAGES
 #include "Languages/spanish.hpp"
+#include "Languages/english.hpp"
 
 void showLanguages()
 {
@@ -32,6 +33,7 @@ int main()
     switch(langNumber)
     {
         case 1: 
+            showEnglish();
             break;
         
         case 2: 

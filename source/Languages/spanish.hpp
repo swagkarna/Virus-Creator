@@ -11,7 +11,7 @@
 #define endl "\n"
 #define clearConsole system("clear");
 
-void showOptions()
+void mostrarOpciones()
 {
     std::cout << "1. Abrir otra alerta" << endl;
     std::cout << "2. Abrir pagina web(SOLO CHROME)" << endl;
@@ -53,7 +53,7 @@ void showSpanish()
     for(int i = 0; i < 1000; i++)
     {
         int option;
-        showOptions();
+        mostrarOpciones();
         scanf("%i", &option);
         if(option == 1)
         {

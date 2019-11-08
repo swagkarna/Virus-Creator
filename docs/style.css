@@ -1,0 +1,70 @@
+/*Instrucciones directas*/
+
+body
+{
+    background-image: linear-gradient(to right, rgb(255, 0, 179), rgba(255, 0, 255, 0.616));
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Thin';
+}
+
+h1 
+{
+    font-family: 'Primetime';
+    font-family: 3em;
+}
+
+p
+{
+    font-family: 'Roboto';
+}
+
+img
+{
+    min-width: 400px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+/*Instrucciones directas personalizadas*/
+
+/*Instrucciones personalizadas*/
+
+.padding-10
+{
+    padding: 10px;
+}
+
+.padding-20
+{
+    padding: 20px;
+}
+
+.padding-30
+{
+    padding: 30px;
+}
+/*ID's*/
+
+/*Fonts*/
+
+@font-face
+{
+    font-family: 'Primetime';
+    src: url('fonts/PRIMETIME.ttf');
+}
+
+@font-face
+{
+    font-family: 'Pusab';
+    border: none;
+    src: url('fonts/Pusab.otf')
+}
+
+@font-face 
+{
+    font-family: 'Thin';
+    src: url('fonts/Roboto-Thin.ttf')
+}

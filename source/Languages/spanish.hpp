@@ -10,13 +10,15 @@
 
 #define endl "\n"
 #define clearConsole system("clear");
+#define PAUSE system("PAUSE");
 
 void mostrarOpciones()
 {
     std::cout << "1. Abrir otra alerta" << endl;
     std::cout << "2. Abrir pagina web(SOLO CHROME)" << endl;
     std::cout << "3. Reiniciar PC" << endl;
-    std::cout << "4. Terminar virus" << endl;
+    std::cout << "4. Script Personalizado (VBscript)" << endl;
+    std::cout << "5. Terminar virus" << endl;
 }
 
 void showSpanish()
@@ -40,7 +42,7 @@ void showSpanish()
     try
     {
         virus.open("virus.vbs", std::ios::ate);
-        virus << "msgbox(\"" << "Has sido infectado por el virus" << " " << nombreVirus << "\")";
+        virus << "msgbox(\"" << "Has sido infectado por el virus:" << " " << nombreVirus << "\")";
     }
     catch(const std::exception& e)
     {
@@ -67,21 +69,11 @@ void showSpanish()
         {
             char abrirWebChrome[] = 
             endl
-            "Option Explicit"
+            "Dim wShell"
             endl
-            "Dim URL,WshShell,i"
+            "Set wShell = CreateObject(\"WScript.Shell\")"
             endl
-            "URL = \"www.google.com\""
-            endl
-            "Set WshShell = CreateObject(\"WScript.shell\")"
-            endl
-            "For i = 0 to 50"
-            endl
-            "WshShell.SendKeys(chr(175))"
-            endl
-            "Next"
-            endl
-            "WshShell.run \"CMD /C start chrome.exe\" & URL & "",0,False"
+            "wShell.Run \"http://google.com\",9"
             endl;
             virus << abrirWebChrome;
             clearConsole
@@ -101,9 +93,26 @@ void showSpanish()
         }
         else if(option == 4)
         {
+            char scriptPersonalizado[1000];
+            std::cout << "Escribe el script personalizado:" << endl;
+            std::cout << "NOTA: Estoy desarrollando una forma de hacer un script multilinea, por favor espera..." << endl;
+            std::cout << "Por ahora para hacer eso tienes que seleccionar la opcion de script personalizado mas de una ves para hacer un script multilinea" << endl;
+            std::cin >> scriptPersonalizado;
+            std::cout << endl;
+            virus << endl << scriptPersonalizado;
+        }
+        else if(option == 5)
+        {
             break;
+            virus.close();
             system("PAUSE");
             std::cout << "Adios!";
+        }
+        else 
+        {
+            std::cout << "ERROR 0x4." << endl;
+            break;
+            PAUSE
         }
         i++;
     }

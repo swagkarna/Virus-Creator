@@ -39,7 +39,7 @@ void showEnglish()
     }
     
 
-    // ESTA PARTE CREA EL ARCHIVO DEL VIRUS FINAL
+    //This part create the virus file.
     try
     {
         virus.open("virus.vbs", std::ios::ate);
@@ -52,7 +52,7 @@ void showEnglish()
 
     std::cout << "Now select what the virus need do:" << endl;
 
-    //Este es el "main loop" en el cual se escribiran los eventos
+    //This is the "main loop" what write the events
     for(int i = 0; i < 1000; i++)
     {
         int option;

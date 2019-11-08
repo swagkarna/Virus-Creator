@@ -29,3 +29,4 @@ With this program you can create a "fake" virus!.
 |0x1   |Unspecified language          |
 |0x2   |Error creating the virus file.|
 |0x3   |The name cannot have spaces, Warning, this error cause a loop in the program!|
+|0x4   |Unspecified option :(|

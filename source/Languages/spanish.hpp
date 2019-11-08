@@ -67,15 +67,10 @@ void showSpanish()
         }
         else if (option == 2)
         {
-            char abrirWebChrome[] = 
-            endl
-            "Dim wShell"
-            endl
-            "Set wShell = CreateObject(\"WScript.Shell\")"
-            endl
-            "wShell.Run \"http://google.com\",9"
-            endl;
-            virus << abrirWebChrome;
+            std::cout << "Dime a la pagina web que quieres que redirije este virus: ";
+            char URL[500];
+            std::cin >> URL;
+            virus << endl << "Dim wShell" << endl << "Set wShell = CreateObject(\"WScript.Shell\")" << endl << "wShell.Run \"" << URL << "\",9";
             clearConsole
         }
         else if(option == 3)

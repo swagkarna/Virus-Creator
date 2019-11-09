@@ -1,4 +1,4 @@
-# Prank-Virus-Creator
+# [Virus Creator](https://github.com/CosmoXDD/Fake-Virus-Creator)
 
 With this program you can create a "fake" virus!.
 

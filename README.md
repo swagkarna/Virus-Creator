@@ -22,6 +22,43 @@ With this program you can create a "fake" virus!.
 
 ![endvirusCapture](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/5.PNG)
 
+# How to compile:
+
+
+Windows: 
+
+1- Clone [this-repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip) or download a zip file.
+
+2- Uncompress the file.
+
+3- Install [MinGW](http://www.mingw.org/) for C++.
+
+4- In the CMD write this: ```cd "THE CODE LOCATION GOES HERE!" && g++ main.cpp -o main && "THE CODE LOCATION GOES HERE!"main```
+
+5- ENJOY!
+
+
+Platforms like UNIX: 
+
+1- Clone [this-repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip) or download a zip file.
+
+2- Uncompress the file.
+
+3- Open the terminal and write ```sudo apt-get install g++```
+
+3b- If you alredy have installed gpp, skip this step.
+
+4- In the terminal write this: ```cd "THE CODE LOCATION GOES HERE!" && g++ main.cpp -o main && "THE CODE LOCATION GOES HERE!"main```
+
+5- ENJOY!
+
+NOTE: PLATFORMS LIKE UNIX DOESN'T NOT RUN VBSCRIPT!
+
+
+MAC OS:
+
+1- Ni puta idea :v
+
 # Error Codes:
 
 |Codes | Reason                       

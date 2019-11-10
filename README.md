@@ -39,7 +39,7 @@ With this program you can create a "fake" virus!.
 5- ENJOY!
 
 
-### Platforms like UNIX: 
+### Linux: 
 
 1- Clone [this-repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip).
 

@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdio>
 
 #define endl "\n"
 #define clearConsole system("clear");
@@ -29,7 +30,7 @@ void vbsSpanish()
     try
     {
         std::cout << "Ahora dime el nombre de tu virus: " << endl;
-        std::getline(std::cin, nombreVirus);
+        std::cin >> nombreVirus;
         virus << nombreVirus;
     }
     catch(const std::exception& e)
@@ -47,7 +48,7 @@ void vbsSpanish()
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR Creating the virus.vbs file!. 0x2" << endl;
+        std::cout << "ERROR Creating the virus.vbs file!. 2" << endl;
     }
 
     std::cout << "Ahora selecciona las acciones que quieres que tu virus haga" << endl;
@@ -62,7 +63,7 @@ void vbsSpanish()
         {
             std::cout << "Por favor dime que otro mensaje quieres que despliege el programa: ";
             char mensaje[500];
-            std::cin.getline(mensaje, sizeof(mensaje));
+            std::cin >> mensaje;
             virus << endl << "msgbox(\"" << mensaje << "\")";
             clearConsole
         }
@@ -94,7 +95,7 @@ void vbsSpanish()
             std::cout << "Escribe el script personalizado:" << endl;
             std::cout << "NOTA: Estoy desarrollando una forma de hacer un script multilinea, por favor espera..." << endl;
             std::cout << "Por ahora para hacer eso tienes que seleccionar la opcion de script personalizado mas de una ves para hacer un script multilinea" << endl;
-            std::getline(std::cin, scriptPersonalizado);
+            std::cin >> scriptPersonalizado;
             std::cout << endl;
             virus << endl << scriptPersonalizado;
             clearConsole
@@ -103,7 +104,7 @@ void vbsSpanish()
         {
             std::string spamMessage;
             std::cout << "Dime el mensaje spam que quieres que aparezca: ";
-            std::getline(std::cin, spamMessage);
+            std::cin >> spamMessage;
             virus << endl << "do" << endl << "x=MsgBox(\"" << spamMessage << "\"," << "vbOkOnly+vbCritical," << "\"" << spamMessage << "\"" << ")" << endl << "loop";
             clearConsole
         }

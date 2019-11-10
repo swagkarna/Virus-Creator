@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <fstream>
 
+//UTILS
 #include "utils/checkVirus.h"
 
 // THE LANGUAGES
@@ -32,6 +33,7 @@ void showLanguages()
 // This is the main entry of the program
 int main()
 {
+    system("Color 0a");
     checkVirus();
     std::cout << "Welcome to this program!" << "\n";
     std::cout << "Please select your language:" << "\n";

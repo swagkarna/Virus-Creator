@@ -25,11 +25,11 @@ void mostrarOpciones()
 void vbsSpanish()
 {
     std::ofstream virus;
-    char nombreVirus[500];
+    std::string nombreVirus;
     try
     {
-        std::cout << "Ahora dime el nombre de tu virus: ";
-        std::cin >> nombreVirus;
+        std::cout << "Ahora dime el nombre de tu virus: " << endl;
+        std::getline(std::cin, nombreVirus);
         virus << nombreVirus;
     }
     catch(const std::exception& e)
@@ -62,7 +62,7 @@ void vbsSpanish()
         {
             std::cout << "Por favor dime que otro mensaje quieres que despliege el programa: ";
             char mensaje[500];
-            std::cin >> mensaje;
+            std::cin.getline(mensaje, sizeof(mensaje));
             virus << endl << "msgbox(\"" << mensaje << "\")";
             clearConsole
         }
@@ -90,20 +90,20 @@ void vbsSpanish()
         }
         else if(option == 4)
         {
-            char scriptPersonalizado[1000];
+            std::string scriptPersonalizado;
             std::cout << "Escribe el script personalizado:" << endl;
             std::cout << "NOTA: Estoy desarrollando una forma de hacer un script multilinea, por favor espera..." << endl;
             std::cout << "Por ahora para hacer eso tienes que seleccionar la opcion de script personalizado mas de una ves para hacer un script multilinea" << endl;
-            std::cin >> scriptPersonalizado;
+            std::getline(std::cin, scriptPersonalizado);
             std::cout << endl;
             virus << endl << scriptPersonalizado;
             clearConsole
         }
         else if(option == 5)
         {
-            char spamMessage[500];
+            std::string spamMessage;
             std::cout << "Dime el mensaje spam que quieres que aparezca: ";
-            std::cin >> spamMessage;
+            std::getline(std::cin, spamMessage);
             virus << endl << "do" << endl << "x=MsgBox(\"" << spamMessage << "\"," << "vbOkOnly+vbCritical," << "\"" << spamMessage << "\"" << ")" << endl << "loop";
             clearConsole
         }

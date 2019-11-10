@@ -28,7 +28,26 @@ img
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
 }
+
+button
+{
+    font-size: 1.5em;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    min-width: 300px;
+    min-width: 100px;
+    max-width: 300px;
+    max-height: 100px;
+}
 /*Instrucciones directas personalizadas*/
+
+button:hover 
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
 
 /*Instrucciones personalizadas*/
 

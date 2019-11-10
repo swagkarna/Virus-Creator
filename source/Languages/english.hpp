@@ -4,6 +4,11 @@
 |           MIT LICENSE              |
 |                                    |
 |-----------------------------------*/
+
+/*
+
+                                VOY A TERMINAR LA VERSION EN ESPAÑOL Y LUEGO SEGUIRE CON LA VERSION EN INGLES!
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -113,3 +118,5 @@ void showEnglish()
         i++;
     }
 }
+
+*/

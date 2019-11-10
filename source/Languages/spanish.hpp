@@ -16,7 +16,7 @@ void mostrarOpciones()
 {
     std::cout << "1. Abrir otra alerta" << endl;
     std::cout << "2. Abrir pagina web(SOLO CHROME)" << endl;
-    std::cout << "3. Reiniciar PC" << endl;
+    std::cout << "3. Reiniciar PC(BETA)" << endl;
     std::cout << "4. Script Personalizado (VBscript)" << endl;
     std::cout << "5. Terminar virus" << endl;
 }

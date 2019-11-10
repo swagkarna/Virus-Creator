@@ -11,8 +11,13 @@
 #include <stdlib.h>
 
 // THE LANGUAGES
-#include "Languages/spanish.hpp"
-#include "Languages/english.hpp"
+#include "VBScript/VBSspanish.hpp"
+
+void showProgramingLanguages()
+{
+    std::cout << "1- VBScript" << endl;
+    std::cout << "2- Bash (WORKING)" << endl;
+}
 
 void showLanguages()
 {
@@ -33,15 +38,33 @@ int main()
     switch(langNumber)
     {
         case 1: 
-            showEnglish();
+        /*  showEnglish(); */
+            std::cout << "The english version is paused for now" << endl;
+            system("PAUSE");
             break;
         
-        case 2: 
-            showSpanish();
+        case 2:
+            int programingLanguage;
+            std::cout << "Ahora por favor dime que lenguaje quieres usar: ";
+            showProgramingLanguages();
+            std::cout << "NOTA: Las distribuciones linux y posiblemente MAC OS no soportan VBScript" << endl;
+            scanf("%i", &programingLanguage);
+            if(programingLanguage == 1)
+            {
+                vbsSpanish();
+            }
+            else if(programingLanguage == 2)
+            {
+                std::cout << "Estoy trabajando en crear soporte para Bash, por favor ten paciencia" << endl;
+            }
+            else 
+            {
+                std::cout << "Error 5." << endl;
+            }
             break;
 
         default:
-            std::cout << "Error 0x1." << "\n";
+            std::cout << "Error 1." << "\n";
             system("PAUSE");
     }
     return 0;

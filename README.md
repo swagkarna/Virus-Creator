@@ -68,3 +68,4 @@ NOTE: PLATFORMS LIKE UNIX NOT RUN VBSCRIPT!
 |2   |Error creating the virus file.|
 |3   |The name cannot have spaces, Warning, this error cause a loop in the program!|
 |4   |Unspecified option :(|
+|5   |You can't create a virus if already this exist|

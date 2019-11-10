@@ -9,12 +9,16 @@
 #include <iostream>
 #include <string.h>
 #include <stdlib.h>
+#include <fstream>
+
+#include "utils/checkVirus.h"
 
 // THE LANGUAGES
 #include "VBScript/VBSspanish.hpp"
 
 void showProgramingLanguages()
 {
+    std::cout << endl;
     std::cout << "1- VBScript" << endl;
     std::cout << "2- Bash (WORKING)" << endl;
 }
@@ -28,6 +32,7 @@ void showLanguages()
 // This is the main entry of the program
 int main()
 {
+    checkVirus();
     std::cout << "Welcome to this program!" << "\n";
     std::cout << "Please select your language:" << "\n";
     int langNumber;

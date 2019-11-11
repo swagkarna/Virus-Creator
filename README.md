@@ -2,6 +2,8 @@
 
 With this program you can create a "fake" virus!.
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J417QAK)
+
 # How to use:
 
 1- You must select your language

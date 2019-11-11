@@ -25,24 +25,16 @@ void mostrarOpciones()
 
 void vbsSpanish()
 {
-    std::ofstream virus;
-    std::string nombreVirus;
-    try
-    {
-        std::cout << "Ahora dime el nombre de tu virus: " << endl;
-        std::cin >> nombreVirus;
-        virus << nombreVirus;
-    }
-    catch(const std::exception& e)
-    {
-        std::cerr << e.what() << '\n';
-        std::cout << "ERROR!, The virus name cannot have spaces!. 3" << endl;
-    }
-    
 
+    std::string nombreVirus;
+    std::cout << "Ahora dime el nombre de tu virus: " << endl;
+    std::getline(std::cin, nombreVirus);
+    std::cout << nombreVirus;
+    
     // ESTA PARTE CREA EL ARCHIVO DEL VIRUS FINAL
+    std::ofstream virus;
     try
-    {
+    {      
         virus.open("virus.vbs", std::ios::ate);
         virus << "msgbox(\"" << "Has sido infectado por el virus:" << " " << nombreVirus << "\")";
     }

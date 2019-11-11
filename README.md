@@ -25,6 +25,9 @@ With this program you can create a "fake" virus!.
 
 # How to compile:
 
+## NOTE:
+
+THIS IS NOT A RELEASE!, THE COMPILE OPTION IS ONLY FOR TESTS. If you want a release click [here](https://github.com/CosmoXDD/Virus-Creator/releases)
 
 ### Windows: 
 

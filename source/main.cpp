@@ -9,7 +9,6 @@
 #include <iostream>
 #include <string.h>
 #include <stdlib.h>
-#include <fstream>
 
 //UTILS
 #include "utils/checkVirus.h"
@@ -21,7 +20,7 @@ void showProgramingLanguages()
 {
     std::cout << endl;
     std::cout << "1- VBScript" << endl;
-    std::cout << "2- Bash (WORKING)" << endl;
+    std::cout << "2- Bash (NOT WORKING)" << endl;
 }
 
 void showLanguages()

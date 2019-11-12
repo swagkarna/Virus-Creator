@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import  VBSlanguages.VBSspanish;
+
 public class main {
 
     public static void showLanguages()
@@ -23,7 +25,7 @@ public class main {
                 case 2:
                     break;
                 default:
-                    System.out.println();
+                    System.out.println("ERROR 1.");
                     break;
             }
         }

@@ -2,8 +2,12 @@ import java.util.Scanner;
 
 import VBSlanguages.VBSspanish.*;
 
-//VBS SPANISH
+//IMPORT UTILS
+import static utils.utils.checkIfVirusExist;
+
+//VBS GENERATORS
 import static VBSlanguages.VBSspanish.vbsSpanish;
+import static VBSlanguages.VBenglish.vbsEnglish;
 
 public class main {
 
@@ -14,6 +18,7 @@ public class main {
     }
 
     public static void main(String[] args){
+        checkIfVirusExist();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to this program!");
         System.out.println("Please, select your language");
@@ -23,7 +28,7 @@ public class main {
             switch (lang)
             {
                 case 1:
-                    System.out.println("Working on english version...");
+                    vbsEnglish();
                     break;
                 case 2:
                     vbsSpanish();

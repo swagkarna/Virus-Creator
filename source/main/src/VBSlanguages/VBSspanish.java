@@ -14,66 +14,75 @@ public class VBSspanish {
         System.out.println("6- Terminar virus");
     }
 
-    public static void vbsSpanish()
-    {
+    public static void vbsSpanish() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ahora dime el nombre de tu virus: ");
         String nombreVirus = scanner.nextLine();
         System.out.println("Entonces el nombre de tu virus sera: " + nombreVirus);
 
         File virus = new File("virus.vbs");
-        try
-        {
+        try {
             PrintWriter salidaVirus = new PrintWriter(new FileWriter(virus, true));
 
-            for(int i = 0; i <= 1000; i++)
-            {
+            System.out.println("Ahora selecciona lo que quieres que tu virus haga: ");
+
+            for (int i = 0; i <= 1000; i++) {
                 int option;
                 mostrarOpciones();
-                option = scanner.nextInt();
+                option = Integer.parseInt(scanner.nextLine());
                 salidaVirus.println(nombreVirus);
+
                 //ACCIONES
-                if(option == 1)
+                if (option == 1)
                 {
-                    String mensaje;
-                    System.out.print("Por favor dime que mensaje quieres que diga tu virus: ");
-                    mensaje = scanner.nextLine();
-                    salidaVirus.println("msgbox(\"" + mensaje + "\")");
+                    String mensajeOtraAlerta;
+                    System.out.println("Ahora dime que mensaje quieres que aparezca: ");
+                    mensajeOtraAlerta = scanner.nextLine();
+                    salidaVirus.println("msgbox(\"" + mensajeOtraAlerta + "\")");
                 }
-                else if(option == 2)
+                else if (option == 2)
                 {
-
+                    String redirectURL;
+                    System.out.println("Ahora dime a que URL quieres que redirija el virus: ");
+                    redirectURL = scanner.nextLine();
+                    salidaVirus.println("Dim wShell");
+                    salidaVirus.println(" ");
+                    salidaVirus.println("Set wShell = CreateObject(\"WScript.Shell\")");
+                    salidaVirus.println("wShell.Run \"" + redirectURL + "\"" + ",9");
                 }
-                else if(option == 3)
+                else if (option == 3)
                 {
-
+                    System.out.println("Sorry!, this don't work for now :(");
                 }
-                else if(option == 4)
+                else if (option == 4)
                 {
-
+                    String scriptPersonalizado;
+                    System.out.println("Escribe el script personalizado: ");
+                    System.out.println("NOTA: Estoy desarrollando una forma de hacer un script multilinea, por favor espera...");
+                    System.out.println("Por ahora para hacer eso tienes que seleccionar la opcion de script personalizado mas de una ves para hacer un script multilinea");
+                    scriptPersonalizado = scanner.nextLine();
+                    salidaVirus.println(scriptPersonalizado);
                 }
-                else if(option == 5)
+                else if (option == 5)
                 {
-
+                    String mensajeSpam;
+                    System.out.println("Dime que mensaje quieres que el programa haga spam: ");
+                    mensajeSpam = scanner.nextLine();
+                    salidaVirus.println("x=MsgBox(\"" + mensajeSpam + "\"," + "vbOkOnly+vbCritical," + "\"" + mensajeSpam + "\"" + ")" + "\n" + "loop");
                 }
-                else if(option == 6)
+                else if (option == 6)
                 {
                     System.out.println("BYE!");
+                    salidaVirus.close();
                     break;
                 }
-                else
-                {
+                else {
                     System.out.println("ERROR 4.");
                 }
                 i++;
             }
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
+        } catch (Exception e) {
             System.out.println("ERROR 2.");
         }
-
-        System.out.println("Ahora selecciona lo que quieres que tu virus haga: ");
     }
 }

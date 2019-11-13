@@ -19,11 +19,11 @@ public class main {
         System.out.println("Please, select your language");
         showLanguages();
         try {
-            int lang = scanner.nextInt();
+            int lang = Integer.parseInt(scanner.nextLine());
             switch (lang)
             {
                 case 1:
-                    System.out.println("Working on english version");
+                    System.out.println("Working on english version...");
                     break;
                 case 2:
                     vbsSpanish();

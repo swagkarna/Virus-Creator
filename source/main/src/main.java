@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
-import  VBSlanguages.VBSspanish;
+import VBSlanguages.VBSspanish.*;
+
+//VBS SPANISH
+import static VBSlanguages.VBSspanish.vbsSpanish;
 
 public class main {
 
@@ -23,6 +26,7 @@ public class main {
                     System.out.println("Working on english version");
                     break;
                 case 2:
+                    vbsSpanish();
                     break;
                 default:
                     System.out.println("ERROR 1.");

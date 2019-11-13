@@ -6,6 +6,10 @@ With this program you can create a "fake" virus!.
 
 # How to use:
 
+### NOTE: 
+
+#### THESE ARE IMAGES OF THE PREVIOUS CODE, THE FINAL RESULT WILL BE VERY DIFFERENT!.
+
 1- You must select your language
 
 ![selectLanguage](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/1.PNG)
@@ -37,11 +41,13 @@ THIS IS NOT A RELEASE!, THE COMPILE OPTION IS ONLY FOR TESTS. If you want a rele
 
 2- Uncompress the file.
 
-3- Install [MinGW](http://www.mingw.org/) for C++.
+3- Install [Java JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 
-4- In the CMD write this: ```cd "THE LOCATION OF THE CLONED CODE GOES HERE!" && g++ main.cpp -o main && "THE LOCATION OF THE CLONED CODE GOES HERE!"main```
+4- Install a IDE like: [Neatbeans](https://netbeans.org/) or [IntelliJ Idea](https://www.jetbrains.com/idea/).
 
-5- ENJOY!
+5- Open the folder of the source code.
+
+6- Test!
 
 
 ### Linux: 
@@ -50,13 +56,13 @@ THIS IS NOT A RELEASE!, THE COMPILE OPTION IS ONLY FOR TESTS. If you want a rele
 
 2- Uncompress the file.
 
-3- Open the terminal and write ```sudo apt-get install g++```
+3- Install [Java JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 
-3b- If you already have installed gpp, skip this step.
+4- Install a IDE like: [IntelliJ Idea](https://www.jetbrains.com/idea/).
 
-4- In the terminal write this: ```cd "THE LOCATION OF THE CLONED CODE GOES HERE" && g++ main.cpp -o main && "THE LOCATION OF THE CLONED CODE GOES HERE"main```
+5- Open the folder of the source code.
 
-5- ENJOY!
+6- Test!
 
 NOTE: PLATFORMS LIKE UNIX NOT RUN VBSCRIPT!
 

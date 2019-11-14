@@ -3,11 +3,12 @@ import java.util.Scanner;
 import VBSlanguages.VBSspanish.*;
 
 //IMPORT UTILS
+import static VBSlanguages.VBenglish.*;
+import static utils.utils.ANSI_RED;
 import static utils.utils.checkIfVirusExist;
 
 //VBS GENERATORS
 import static VBSlanguages.VBSspanish.vbsSpanish;
-import static VBSlanguages.VBenglish.vbsEnglish;
 
 public class main {
 
@@ -20,8 +21,8 @@ public class main {
     public static void main(String[] args){
         checkIfVirusExist();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to this program!");
-        System.out.println("Please, select your language");
+        System.out.println(ANSI_GREEN + "Welcome to this program!");
+        System.out.println(ANSI_BLUE + "Please, select your language");
         showLanguages();
         try {
             int lang = Integer.parseInt(scanner.nextLine());
@@ -34,7 +35,7 @@ public class main {
                     vbsSpanish();
                     break;
                 default:
-                    System.out.println("ERROR 1.");
+                    System.out.println(ANSI_RED + "ERROR 1.");
                     break;
             }
         }

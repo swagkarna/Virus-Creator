@@ -4,11 +4,22 @@ import java.io.*;
 import java.util.Scanner;
 
 public class VBSspanish {
+
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_WHITE = "\u001B[37m";
+
     public static void mostrarOpciones()
     {
         System.out.println("1- Abrir otra alerta");
         System.out.println("2- Abrir pagina web");
-        System.out.println("3- Reiniciar PC");
+        System.out.println("3- Apagar PC");
         System.out.println("4- Script Personalizado");
         System.out.println("5- Mensaje SPAM");
         System.out.println("6- Terminar virus");
@@ -16,7 +27,7 @@ public class VBSspanish {
 
     public static void vbsSpanish() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Ahora dime el nombre de tu virus: ");
+        System.out.print(ANSI_WHITE + "Ahora dime el nombre de tu virus: ");
         String nombreVirus = scanner.nextLine();
         System.out.println("Entonces el nombre de tu virus sera: " + nombreVirus);
 
@@ -50,7 +61,8 @@ public class VBSspanish {
                 }
                 else if (option == 3)
                 {
-                    System.out.println("Sorry!, this don't work for now :(");
+                    salidaVirus.println("rc = objShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 0\", 0, True");
+                    salidaVirus.println("If rc <> 0 Then MsgBox \"shutdown failed with exit code \" & rc & \".\"");
                 }
                 else if (option == 4)
                 {
@@ -75,12 +87,12 @@ public class VBSspanish {
                     break;
                 }
                 else {
-                    System.out.println("ERROR 4.");
+                    System.out.println(ANSI_RED + "ERROR 4.");
                 }
                 i++;
             }
         } catch (Exception e) {
-            System.out.println("ERROR 2.");
+            System.out.println(ANSI_RED + "ERROR 2.");
         }
     }
 }

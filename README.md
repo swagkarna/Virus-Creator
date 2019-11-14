@@ -4,6 +4,8 @@ With this program you can create a "fake" virus!.
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J417QAK)
 
+#### [ESPAÑOL]()
+
 # How to use:
 
 ### NOTE: 
@@ -12,32 +14,32 @@ With this program you can create a "fake" virus!.
 
 1- You must select your language
 
-![selectLanguage](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/1.PNG)
+![selectLanguage](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img1.PNG)
 
 2- Put a virus name
 
-![virusName](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/2.PNG)
+![virusName](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img2.PNG)
 
 3- Select any option USING NUMBERS
 
-![selection](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/3.PNG)
+![selection](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img3.PNG)
 
 ![selection2](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/4.PNG)
 
 4- And when you feel your virus is over, select END VIRUS.
 
-![endvirusCapture](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/5.PNG)
+![endvirusCapture](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img5.PNG)
 
 
 # How to compile:
 
-## NOTE:
+### NOTE:
 
-THIS IS NOT A RELEASE!, THE COMPILE OPTION IS ONLY FOR TESTS. If you want a release click [here](https://github.com/CosmoXDD/Virus-Creator/releases)
+#### THIS IS NOT A RELEASE!, THE COMPILE OPTION IS ONLY FOR TESTS. If you want a release click [here](https://github.com/CosmoXDD/Virus-Creator/releases)
 
 ### Windows: 
 
-1- Clone [this-repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip).
+1- Clone [this repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip).
 
 2- Uncompress the file.
 
@@ -52,7 +54,7 @@ THIS IS NOT A RELEASE!, THE COMPILE OPTION IS ONLY FOR TESTS. If you want a rele
 
 ### Linux: 
 
-1- Clone [this-repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip).
+1- Clone [this repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip).
 
 2- Uncompress the file.
 
@@ -64,7 +66,7 @@ THIS IS NOT A RELEASE!, THE COMPILE OPTION IS ONLY FOR TESTS. If you want a rele
 
 6- Test!
 
-NOTE: PLATFORMS LIKE UNIX NOT RUN VBSCRIPT!
+NOTE: PLATFORMS LIKE LINUX NOT RUN VBSCRIPT!
 
 
 ### MAC OS:
@@ -77,6 +79,6 @@ NOTE: PLATFORMS LIKE UNIX NOT RUN VBSCRIPT!
 |------|------------------------------|
 |1   |Unspecified language          |
 |2   |Error creating the virus file.|
-|3   |The name cannot have spaces, Warning, this error cause a loop in the program!|
+|3   |The name cannot have spaces, Warning, this error cause a loop in the program! (THIS ONLY HAPPENS IN THE C++ VERSION, NOT THE JAVA VERSION!!)|
 |4   |Unspecified option :(|
 |5   |You can't create a virus if already this exist|

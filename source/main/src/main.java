@@ -14,7 +14,7 @@ public class main {
 
     public static void showLanguages()
     {
-        System.out.println("1- English");
+        System.out.println(ANSI_WHITE + "1- English");
         System.out.println("2- Spanish");
     }
 

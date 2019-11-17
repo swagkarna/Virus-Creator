@@ -4,7 +4,7 @@ With this program you can create a "fake" virus!.
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J417QAK)
 
-#### [ESPAÑOL]()
+#### [ESPAÑOL](https://github.com/CosmoXDD/Virus-Creator/blob/master/README.es.md)
 
 # How to use:
 
@@ -24,7 +24,7 @@ With this program you can create a "fake" virus!.
 
 ![selection](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img3.PNG)
 
-![selection2](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/4.PNG)
+![selection2](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img4.PNG)
 
 4- And when you feel your virus is over, select END VIRUS.
 

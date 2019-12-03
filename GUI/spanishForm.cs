@@ -349,7 +349,7 @@ namespace Virus_Creator_GUI
             //Agrega el contenido al archivo
             try
             {
-                string script = "do" + "\n" + "x=MsgBox(\"" + spamMessage + "\"," + "vbOkOnly+vbCritical," + "\"" + spamMessage + "\"" + ")" + "\n" + "loop";
+                string script = "\n" + "do" + "\n" + "x=MsgBox(\"" + spamMessage + "\"," + "vbOkOnly+vbCritical," + "\"" + spamMessage + "\"" + ")" + "\n" + "loop";
                 File.AppendAllText("virus.vbs", script);
             }
             catch

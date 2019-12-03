@@ -30,6 +30,7 @@ namespace Virus_Creator_GUI
 
         private void Btn_english_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("The english version is BROKEN!, please use the console version :(");
             englishForm english = new englishForm();
             english.Show();
         }

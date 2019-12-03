@@ -65,6 +65,9 @@
     <Compile Include="spanishForm.Designer.cs">
       <DependentUpon>spanishForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="englishForm.resx">
+      <DependentUpon>englishForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

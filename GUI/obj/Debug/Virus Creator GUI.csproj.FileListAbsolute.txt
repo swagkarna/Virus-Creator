@@ -30,3 +30,4 @@ C:\Users\PC\Desktop\Github\Virus-Creator\GUI\obj\Debug\Virus Creator GUI.csproj.
 C:\Users\PC\Desktop\Github\Virus-Creator\GUI\obj\Debug\Virus Creator GUI.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\Github\Virus-Creator\GUI\obj\Debug\Virus Creator GUI.exe
 C:\Users\PC\Desktop\Github\Virus-Creator\GUI\obj\Debug\Virus Creator GUI.pdb
+C:\Users\PC\Desktop\Github\Virus-Creator\GUI\obj\Debug\Virus_Creator_GUI.englishForm.resources

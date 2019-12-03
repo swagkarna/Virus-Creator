@@ -28,27 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.text1 = new System.Windows.Forms.Label();
             this.btn_english = new System.Windows.Forms.Button();
             this.btn_spanish = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // text1
-            // 
-            this.text1.AutoSize = true;
-            this.text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text1.Location = new System.Drawing.Point(120, 37);
-            this.text1.Name = "text1";
-            this.text1.Size = new System.Drawing.Size(575, 63);
-            this.text1.TabIndex = 0;
-            this.text1.Text = "Select Your Language:";
-            this.text1.Click += new System.EventHandler(this.Text1_Click);
-            // 
             // btn_english
             // 
             this.btn_english.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_english.Location = new System.Drawing.Point(225, 151);
+            this.btn_english.Location = new System.Drawing.Point(221, 103);
             this.btn_english.Name = "btn_english";
             this.btn_english.Size = new System.Drawing.Size(145, 74);
             this.btn_english.TabIndex = 1;
@@ -59,7 +47,7 @@
             // btn_spanish
             // 
             this.btn_spanish.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_spanish.Location = new System.Drawing.Point(445, 151);
+            this.btn_spanish.Location = new System.Drawing.Point(441, 103);
             this.btn_spanish.Name = "btn_spanish";
             this.btn_spanish.Size = new System.Drawing.Size(145, 74);
             this.btn_spanish.TabIndex = 2;
@@ -86,18 +74,14 @@
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_spanish);
             this.Controls.Add(this.btn_english);
-            this.Controls.Add(this.text1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label text1;
         private System.Windows.Forms.Button btn_english;
         private System.Windows.Forms.Button btn_spanish;
         private System.Windows.Forms.Button btn_exit;

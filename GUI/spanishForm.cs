@@ -13,6 +13,11 @@ namespace Virus_Creator_GUI
 {
     public partial class spanishForm : Form
     {
+        /* Works?
+        //Crea el archivo
+        FileStream virusFile = File.Create("virus.vbs");
+        */
+
         public spanishForm()
         {
             InitializeComponent();
@@ -73,6 +78,15 @@ namespace Virus_Creator_GUI
             virusURL = textBox.Text;
 
             //Agrega el contenido al archivo
+
+            try
+            {
+                File.AppendAllText("virus.vbs", "Abrir sitio web");
+            }
+            catch
+            {
+                MessageBox.Show("Error trabajando con el archivo!");
+            }
         }
 
         private void Btn_otherAlert_Click(object sender, EventArgs e)
@@ -126,6 +140,14 @@ namespace Virus_Creator_GUI
             virusAlerta = textBox.Text;
 
             //Agrega el contenido al archivo
+            try
+            {
+                File.AppendAllText("virus.vbs", "Abrir otra alerta");
+            }
+            catch
+            {
+                MessageBox.Show("Error trabajando con el archivo!");
+            }
         }
 
         private void Btn_create_Click(object sender, EventArgs e)

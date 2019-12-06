@@ -10,7 +10,7 @@ With this program you can create a "fake" virus!.
 
 ### NOTE: 
 
-#### THESE ARE IMAGES OF THE PREVIOUS CODE, THE FINAL RESULT WILL BE VERY DIFFERENT!.
+#### THESE ARE VERY OLD IMAGES
 
 1- You must select your language
 
@@ -39,39 +39,15 @@ With this program you can create a "fake" virus!.
 
 ### Windows: 
 
-1- Clone [this repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip).
+1- Download Visual Studio 2019
 
-2- Uncompress the file.
+2- Install the .Net package
 
-3- Install [Java JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+3- Clone this repository
 
-4- Install a IDE like: [Neatbeans](https://netbeans.org/) or [IntelliJ Idea](https://www.jetbrains.com/idea/).
+4- Open the file: Virus Creator GUI.sln with Visual Studio 2019
 
-5- Open the folder of the source code.
-
-6- Test!
-
-
-### Linux: 
-
-1- Clone [this repository](https://github.com/CosmoXDD/Virus-Creator/archive/master.zip).
-
-2- Uncompress the file.
-
-3- Install [Java JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
-
-4- Install a IDE like: [IntelliJ Idea](https://www.jetbrains.com/idea/).
-
-5- Open the folder of the source code.
-
-6- Test!
-
-NOTE: PLATFORMS LIKE LINUX NOT RUN VBSCRIPT!
-
-
-### MAC OS:
-
-1- Ni puta idea :v
+5- Enjoy :D.
 
 # Error Codes:
 

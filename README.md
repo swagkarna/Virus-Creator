@@ -6,31 +6,6 @@ With this program you can create a "fake" virus!.
 
 #### [ESPAÑOL](https://github.com/CosmoXDD/Virus-Creator/blob/master/README.es.md)
 
-# How to use:
-
-### NOTE: 
-
-#### THESE ARE VERY OLD IMAGES
-
-1- You must select your language
-
-![selectLanguage](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img1.PNG)
-
-2- Put a virus name
-
-![virusName](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img2.PNG)
-
-3- Select any option USING NUMBERS
-
-![selection](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img3.PNG)
-
-![selection2](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img4.PNG)
-
-4- And when you feel your virus is over, select END VIRUS.
-
-![endvirusCapture](https://raw.githubusercontent.com/CosmoXDD/Prank-Virus-Creator/master/img/img5.PNG)
-
-
 # How to compile:
 
 ### NOTE:

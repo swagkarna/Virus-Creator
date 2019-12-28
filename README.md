@@ -23,13 +23,3 @@ With this program you can create a "fake" virus!.
 4- Open the file: Virus Creator GUI.sln with Visual Studio 2019
 
 5- Enjoy :D.
-
-# Error Codes:
-
-|Codes | Reason                       
-|------|------------------------------|
-|1   |Unspecified language          |
-|2   |Error creating the virus file.|
-|3   |The name cannot have spaces, Warning, this error cause a loop in the program! (THIS ONLY HAPPENS IN THE C++ VERSION, NOT THE JAVA VERSION!!)|
-|4   |Unspecified option :(|
-|5   |You can't create a virus if already this exist|

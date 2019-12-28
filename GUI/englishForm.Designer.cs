@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_vName = new System.Windows.Forms.Button();
             this.btn_spamMessage = new System.Windows.Forms.Button();
             this.btn_customScript = new System.Windows.Forms.Button();
             this.btn_shutdown = new System.Windows.Forms.Button();
@@ -38,19 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btn_vName
-            // 
-            this.btn_vName.Location = new System.Drawing.Point(58, 57);
-            this.btn_vName.Name = "btn_vName";
-            this.btn_vName.Size = new System.Drawing.Size(220, 23);
-            this.btn_vName.TabIndex = 17;
-            this.btn_vName.Text = "Virus Name";
-            this.btn_vName.UseVisualStyleBackColor = true;
-            this.btn_vName.Click += new System.EventHandler(this.Btn_vName_Click_1);
-            // 
             // btn_spamMessage
             // 
-            this.btn_spamMessage.Location = new System.Drawing.Point(58, 205);
+            this.btn_spamMessage.Location = new System.Drawing.Point(58, 171);
             this.btn_spamMessage.Name = "btn_spamMessage";
             this.btn_spamMessage.Size = new System.Drawing.Size(220, 23);
             this.btn_spamMessage.TabIndex = 16;
@@ -60,7 +49,7 @@
             // 
             // btn_customScript
             // 
-            this.btn_customScript.Location = new System.Drawing.Point(58, 175);
+            this.btn_customScript.Location = new System.Drawing.Point(58, 141);
             this.btn_customScript.Name = "btn_customScript";
             this.btn_customScript.Size = new System.Drawing.Size(220, 23);
             this.btn_customScript.TabIndex = 15;
@@ -70,7 +59,7 @@
             // 
             // btn_shutdown
             // 
-            this.btn_shutdown.Location = new System.Drawing.Point(58, 145);
+            this.btn_shutdown.Location = new System.Drawing.Point(58, 111);
             this.btn_shutdown.Name = "btn_shutdown";
             this.btn_shutdown.Size = new System.Drawing.Size(220, 23);
             this.btn_shutdown.TabIndex = 14;
@@ -80,7 +69,7 @@
             // 
             // btn_otherAlert
             // 
-            this.btn_otherAlert.Location = new System.Drawing.Point(58, 115);
+            this.btn_otherAlert.Location = new System.Drawing.Point(58, 81);
             this.btn_otherAlert.Name = "btn_otherAlert";
             this.btn_otherAlert.Size = new System.Drawing.Size(220, 23);
             this.btn_otherAlert.TabIndex = 13;
@@ -90,7 +79,7 @@
             // 
             // btn_openWebsite
             // 
-            this.btn_openWebsite.Location = new System.Drawing.Point(58, 86);
+            this.btn_openWebsite.Location = new System.Drawing.Point(58, 52);
             this.btn_openWebsite.Name = "btn_openWebsite";
             this.btn_openWebsite.Size = new System.Drawing.Size(220, 23);
             this.btn_openWebsite.TabIndex = 12;
@@ -100,7 +89,7 @@
             // 
             // btn_create
             // 
-            this.btn_create.Location = new System.Drawing.Point(104, 260);
+            this.btn_create.Location = new System.Drawing.Point(99, 207);
             this.btn_create.Name = "btn_create";
             this.btn_create.Size = new System.Drawing.Size(131, 52);
             this.btn_create.TabIndex = 11;
@@ -122,8 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 322);
-            this.Controls.Add(this.btn_vName);
+            this.ClientSize = new System.Drawing.Size(330, 271);
             this.Controls.Add(this.btn_spamMessage);
             this.Controls.Add(this.btn_customScript);
             this.Controls.Add(this.btn_shutdown);
@@ -141,8 +129,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_vName;
         private System.Windows.Forms.Button btn_spamMessage;
         private System.Windows.Forms.Button btn_customScript;
         private System.Windows.Forms.Button btn_shutdown;
